@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON DODGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <h1>NEON DODGE</h1>
+        <p class="subtitle">SURVIVE THE FALL</p>
+
+        <div class="stats">
+            <div>Score: <span id="score">0</span></div>
+            <div>Level: <span id="level">1</span></div>
+            <div>Lives: <span id="lives">3</span></div>
+        </div>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="600" height="450"></canvas>
+
+            <div id="overlay">
+                <h2 id="message">NEON DODGE</h2>
+                <p id="description">Avoid the falling blocks!</p>
+                <button id="startBtn">START GAME</button>
+            </div>
+        </div>
+
+        <p class="controls">
+            Move: ← → or A / D
+        </p>
+
+        <button id="pauseBtn">PAUSE</button>
+        <button id="restartBtn">RESTART</button>
+
+        <p class="highscore">
+            Best Score: <span id="highScore">0</span>
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #17113d, #050510);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    width: 95%;
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    color: #00f7ff;
+    text-shadow: 0 0 15px #00f7ff;
+    letter-spacing: 5px;
+}
+
+.subtitle {
+    color: #ff36d1;
+    letter-spacing: 5px;
+    margin: 10px 0 25px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background: #15152e;
+    border: 1px solid #00f7ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.stats div {
+    font-weight: bold;
+}
+
+.stats span {
+    color: #00f7ff;
+}
+
+.game-area {
+    position: relative;
+    width: 100%;
+    border: 3px solid #00f7ff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 25px #00f7ff66;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    background: #08081a;
+}
+
+#overlay {
+    position: absolute;
+    inset: 0;
+    background: #050510e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+}
+
+#overlay h2 {
+    font-size: 35px;
+    color: #00f7ff;
+    text-shadow: 0 0 15px #00f7ff;
+}
+
+#overlay p {
+    color: #ddd;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    background: #00d9ff;
+    color: #050510;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ff36d1;
+    transform: scale(1.05);
+}
+
+.controls {
+    margin: 15px 0;
+    color: #aaa;
+}
+
+.highscore {
+    margin-top: 15px;
+    color: #ff36d1;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .stats {
+        font-size: 12px;
+    }
+}
